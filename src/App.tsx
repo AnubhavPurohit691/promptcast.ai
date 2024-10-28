@@ -1,17 +1,15 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Body from './components/Body'
-import Navbar from './components/Navbar'
-import { FileUpload } from './components/ui/file-upload'
+import Home from './pages/Home'
+import Login from './pages/Login'
+
 
 function App() {
   return (
-    <>
-<div className='h-full bg-myblue'>
-<Navbar/>
-<Body/>
-<FileUpload/>
-</div>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   )
 }
 
