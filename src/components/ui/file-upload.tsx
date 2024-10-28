@@ -54,9 +54,9 @@ export const FileUpload = ({
 
   return (
     <div className="w-full h-screen py-[15%]" {...getRootProps()}>
-      <PlaceholdersAndVanishInput placeholders={[]} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
+      <PlaceholdersAndVanishInput placeholders={[]} onChange={function (): void {
         throw new Error("Function not implemented.");
-      } } onSubmit={function (e: React.FormEvent<HTMLFormElement>): void {
+      } } onSubmit={function (): void {
         throw new Error("Function not implemented.");
       } }></PlaceholdersAndVanishInput>
       <motion.div
